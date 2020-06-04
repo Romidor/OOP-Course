@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Info</class>
+ <widget class="QDialog" name="Info">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>460</width>
+    <height>549</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>480</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Понятно</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>430</y>
+     <width>211</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Автор: Герасимов Л. МОп-1702а</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>411</width>
+     <height>361</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Программа AlgoMatch предназначена для сравнения эффективности алгоритмов поиска. Перед началом работы убедитесь в том, что в одной директории с программой существует файл &quot;algomatchconfigs.txt&quot; и он не пуст. Чтобы начать, перейдите в раздел &quot;Параметры&quot; и установите значения, необходимые для эксперимента. Поля &quot;Нижняя граница диапазона&quot; и &quot;Верхняя граница диапазона&quot; влияют на количество повторяющихся элементов в множестве, в кототом будет производиться поиск. Поле &quot;Размер выборки&quot; влияет на его размер. Для изменения точности результата перемещайте ползунок. Слева находится минимальное значение, справа -максимальное. Под ним вы увидите три алгоритма, доступных для сравнения. Выберите необходимые и нажмите кнопку &quot;Сохранить&quot;. После этого окно настроек можно закрыть. Чтобы увидеть результаты опыта, нажмите кнопку &quot;Сравнить&quot;. После задержки, зависящей от размера выборки, откроется новое окно, в котором будут представлены результаты. Для выхода из программы воспользуйтесь кнопкой &quot;Выход&quot;.</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Info</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>212</x>
+     <y>513</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>338</x>
+     <y>501</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
